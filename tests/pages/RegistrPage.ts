@@ -26,7 +26,7 @@ export class RegistrPage{
 }
 
 async goto() {
-    await this.page.goto('https://guest:welcome2qauto@qauto.forstudy.space/',{waitUntil: 'load'});
+    await this.page.goto('/',{waitUntil: 'load'});
 
     //async navigate() {
 

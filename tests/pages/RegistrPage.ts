@@ -10,6 +10,7 @@ export class RegistrPage{
     repeatPasswordInput: any;
     registerButton: any;
     page: any;
+    static goto: any;
    
     
     constructor(page){
@@ -50,6 +51,8 @@ async completedForm() {
     await this.registerButton.click()
 }
 };
+
+//module.exports = RegistrPage;
 
 
 

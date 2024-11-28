@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { userGaragePage } from './fixtures/userGaragePage';
+import  userGaragePage  from './pages/userGaragePage';
 
 test.use({ storageState: 'storageState.json' });
 

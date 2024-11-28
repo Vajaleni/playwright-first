@@ -1,5 +1,5 @@
 import { Locator, Page } from '@playwright/test';
-import userGaragePage from '../fixtures/userGaragePage'
+import userGaragePage from '../pages/userGaragePage'
 
 
 export class LoginPage {

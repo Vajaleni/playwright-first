@@ -1,7 +1,7 @@
 import { chromium, expect, FullConfig } from '@playwright/test';
 import MainPage from '../pages/MainPage';
 import LoginPage from '../pages/LoginPage';
-import userGaragePage from '../fixtures/userGaragePage'
+import userGaragePage from '../pages/userGaragePage'
 
 
 async function globalSetup(config: FullConfig) {
@@ -14,7 +14,7 @@ const loginPage = await mainPage.clickSignInButton();
 const garagePage: userGaragePage = await loginPage.logIn(process.env.USER_EMAIL!, process.env.USER_PASSWORD!);
 await garagePage.verifyHeader();
 
-await page.context().storageState({ path: '../fixtures/storageState.json' });
+await page.context().storageState({ path: '../script/storageState.json' });
 await browser.close();
 }
 

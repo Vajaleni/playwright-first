@@ -10,7 +10,7 @@ const page = await browser.newPage();
 const mainPage = new MainPage(page);
 await mainPage.open();
 
-const loginPage = await mainPage.clickSignInButton();
+const loginPage = await MainPage.clickSignInButton();
 const garagePage: userGaragePage = await loginPage.logIn(process.env.USER_EMAIL!, process.env.USER_PASSWORD!);
 await garagePage.verifyHeader();
 
